@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">e - Commerce</string>
+    <string name="splash_text">e - Shoppe</string>
+    <string name="Subrayado"><u>¿Olvidó su contraseña?</u></string>
+    <string name="Registrate"><u>Regístrate</u></string>
+    <!-- Error Messages -->
+    <string name="NoInternet">Por favor revise su conexion a internet</string>
+    <string name="Error500">Error: algo salio mal</string>
+    <string name="BlankError">"llene todos los Campos"</string>
+    <string name="EmailError">"Email no valido"</string>
+    <string name="EmailExistsError">"Email ya existe"</string>
+    <string name="InvalidUser">Email o clave incorrecta</string>
+    <string name="retry">RETRY</string>
+
+    <!-- Bottom Navigation Titles -->
+    <string name="TitleHome">Inicio</string>
+    <string name="TitleCategories">Categorias</string>
+    <string name="TitleShortlist">Deseos</string>
+    <string name="TitleAccount">Cuenta</string>
+
+    <!-- Sort / Filter -->
+    <string name="sort">Ordenar</string>
+    <string name="filter">Filtrar</string>
+    <string name="filters">Filtros</string>
+    <string name="apply">Aplicar</string>
+    <string name="clear">Eliminar Todo</string>
+
+    <!-- Product Detail Page -->
+    <string name="buy">Compra ahora</string>
+    <string name="cart">Agregar al Carrito</string>
+    <string name="cart_empty">carrito esta vacio</string>
+    <string name="add_success">Se agregro</string>
+    <string name="item_exists">Ya esta agregado</string>
+    <string name="color_select">Please Select Color</string>
+    <string name="size_select">Please Select Size</string>
+    <string name="item_add_wishlist">Agregado a la lista de deseos</string>
+    <string name="item_rem_wishlist">Eliminado de la lista de deseos</string>
+
+    <!-- Sign In / Sign Up -->
+    <string name="signin">Sign In</string>
+    <string name="signup">Sign Up</string>
+    <string name="name">Nombre Completo</string>
+    <string name="email">e-mail</string>
+    <string name="password">clave</string>
+    <string name="mobile">Nro Celular</string>
+
+    <!-- Shopping Cart Page -->
+    <string name="place_order">Realizar pedido</string>
+    <string name="shopping_cart">Carrito de compras</string>
+
+    <!-- My Orders Page -->
+    <string name="my_orders">Mis pedidos</string>
+
+    <!-- <string name="facebook_app_id">facebook_app_id</string>
+     <string name="fb_login_protocol_scheme">fb_facebook_app_id</string>-->
+
+    <string name="title_activity_cambio_clave">CambioClave</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="facebook_app_id">1082021768972677</string>
+    <string name="fb_login_protocol_scheme">fb1082021768972677</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

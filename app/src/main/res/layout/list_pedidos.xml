@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/itemLaype"
+        android:focusableInTouchMode="false"
+        android:layout_toLeftOf="@+id/remove"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+
+        <TextView
+            android:id="@+id/nro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/img"
+            android:text="nro"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/estado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/nro"
+            android:text="Sample"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/cancelar"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="72dp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@+id/nro"
+            android:background="@color/colorPrimaryDark"
+            android:text="Cancelar" />
+
+        <TextView
+            android:id="@+id/pagot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/estado"
+            android:layout_alignLeft="@+id/estado"
+            android:layout_marginLeft="96dp"
+            android:layout_marginTop="-6dp"
+            android:text="S/ 7000"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinatorLay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#36AEA0">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/atras"
+            android:src="@drawable/ic_arrow_left"
+            android:scaleType="center"
+            android:layout_width="56dp"
+            android:layout_height="56dp" />
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="46dp"
+            android:gravity="center"
+            android:text="PeruTecsols"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTitulo"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Los mejores productos                            tecnológicos a un click de distancia  "/>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTitulo"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="101dp"
+            android:layout_marginBottom="-1dp"
+            android:background="@drawable/esquinas_redondeadas"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="300dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp"
+                android:drawableLeft="@drawable/ic_baseline_email_24"
+                android:background="@color/border"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="300dp"
+                    android:layout_height="65dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:hint="Password"
+                    android:background="@color/border"
+                    android:drawableLeft="@drawable/ic_baseline_lock_24"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:layout_toLeftOf="@+id/showpassword"
+                    android:inputType="textPassword"
+
+                    />
+                <ImageView
+                    android:focusableInTouchMode="false"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/showpassword"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_eye_off_grey600_24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/signin"
+                android:textSize="18dp"
+                android:text="Iniciar Sesión"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="#3475C2" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textColor="#36AEA0"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Subrayado"
+                android:textSize="16sp"/>
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="17dp"
+                    android:layout_width="90dp"
+                    android:layout_height="1dp"
+                    android:background="@drawable/separador"
+                    android:layout_marginLeft="55dp" />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textColor= "@color/black"
+                    android:gravity="center"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:text="Iniciar con"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_marginTop="17dp"
+                    android:layout_width="90dp"
+                    android:layout_height="1dp"
+                    android:background="@drawable/separador" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="50dp">
+
+                <com.facebook.login.widget.LoginButton
+                    android:id="@+id/login_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+
+                    />
+
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/signup"
+                android:layout_marginTop="100dp"
+                android:textColor="#36AEA0"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Registrate"
+                android:textSize="19sp"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_anchor="@+id/relativeLayout"
+        app:layout_anchorGravity="center" />
+
+</android.support.design.widget.CoordinatorLayout>

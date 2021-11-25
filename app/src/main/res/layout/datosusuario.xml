@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/border">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomLay"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/defaultMargin"
+                android:layout_marginTop="@dimen/defaultMargin"
+                android:layout_marginRight="@dimen/defaultMargin"
+                android:layout_marginBottom="5dp"
+                android:text="Preeth"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/defaultMargin"
+                android:layout_marginTop="@dimen/halfMargin"
+                android:layout_marginRight="@dimen/defaultMargin"
+                android:layout_marginBottom="5dp"
+                android:text="9995188504"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/direccion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/defaultMargin"
+                android:layout_marginTop="@dimen/halfMargin"
+                android:layout_marginRight="@dimen/defaultMargin"
+                android:layout_marginBottom="5dp"
+                android:text="direccion"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/defaultMargin"
+                android:layout_marginTop="@dimen/halfMargin"
+                android:layout_marginRight="@dimen/defaultMargin"
+                android:layout_marginBottom="@dimen/defaultMargin"
+                android:text="preeth@gmail.com"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/cambiopass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/defaultMargin"
+                android:layout_marginTop="@dimen/halfMargin"
+                android:layout_marginRight="@dimen/defaultMargin"
+                android:layout_marginBottom="@dimen/defaultMargin"
+                android:text="Cambiar Clave"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16dp" />
+
+            <include layout="@layout/border" />
+
+            <RelativeLayout
+                android:id="@+id/myOrdersLay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="false">
+
+                <TextView
+                    android:id="@+id/myOrdersText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/defaultMargin"
+                    android:text="Mis pedidos"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/account_title" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/defaultMargin"
+                    android:src="@drawable/ic_chevron_right_grey600_24dp" />
+            </RelativeLayout>
+
+            <include layout="@layout/border" />
+
+            <RelativeLayout
+                android:id="@+id/logoutLay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="false">
+
+                <TextView
+                    android:id="@+id/logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="@dimen/defaultMargin"
+                    android:text="Iniciar Sesión"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/account_title" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

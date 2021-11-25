@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/m" />
+
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:text="Elegir Foto de Pago" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/defaultMargin"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="@dimen/defaultMargin"
+            android:text="Direccion de Envio"
+            android:textColor="@color/black"
+            android:textSize="@dimen/reg_title" />
+        <TextView
+            android:id="@+id/midirec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="@dimen/defaultMargin"
+            android:text="Usar Direccion de mi Cuenta"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/reg_title" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+    <EditText
+        android:id="@+id/direc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/defaultMargin"
+        android:layout_marginRight="@dimen/defaultMargin"
+        android:hint="Direccion"
+        android:inputType="text"
+        android:maxLines="1"
+        android:singleLine="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/defaultMargin"
+        android:layout_marginTop="@dimen/app_default"
+        android:layout_marginRight="@dimen/defaultMargin"
+        android:text="Referencia"
+        android:textColor="@color/black"
+        android:textSize="@dimen/reg_title" />
+
+    <EditText
+        android:id="@+id/refe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/defaultMargin"
+        android:layout_marginRight="@dimen/defaultMargin"
+        android:hint="Referencia"
+        android:inputType="text"
+        android:maxLines="1"
+        android:singleLine="true" />
+   <!-- <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <RadioGroup
+            android:id="@+id/opciones_pago"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etiqueta_opciones_pago"
+            >
+
+            <RadioButton
+                android:id="@+id/cell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:checked="true"
+                android:text="Transferencia Movil" />
+
+            <RadioButton
+                android:id="@+id/contra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Contra Entrega" />
+        </RadioGroup>
+
+</LinearLayout>-->
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/border">
+
+        <TextView
+            android:id="@+id/totalpago"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="@dimen/defaultMargin"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="S/. 72,000"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+    </TableRow>
+
+
+
+    <Button
+        android:id="@+id/pagar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="2dp"
+
+
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/place_order"
+        android:textColor="@color/white"
+        android:textSize="@dimen/product_detail_button" />
+</LinearLayout>
